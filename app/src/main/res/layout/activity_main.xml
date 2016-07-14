@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.blank.root.buku.MainActivity">
+
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:layout_below="@id/toolbar1"
+        android:layout_marginTop="0dp"
+        android:background="#b71c1c" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_below="@id/toolbar1"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bgtoolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvArticle"
+        android:layout_width="match_parent"
+        android:layout_below = "@id/view"
+        android:layout_height="wrap_content" />
+
+        <include layout = "@layout/tombol"
+            android:layout_alignParentEnd = "true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom = "40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+</RelativeLayout>

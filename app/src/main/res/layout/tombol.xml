@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+        <ImageButton
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:background="@drawable/oval2"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"/>
+        <ImageButton
+            android:id = "@+id/fbnew"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:background="@drawable/oval"
+            android:src="@drawable/ic_control_point_black_24dp" />
+</RelativeLayout>
+

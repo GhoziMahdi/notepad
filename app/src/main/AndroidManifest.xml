@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blank.root.buku">
+
+    <application
+        android:name = ".BaseApp"
+        android:allowBackup="true"
+        android:icon="@drawable/update"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:label="@string/app_name"
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainNew"
+            android:label = "New Note">
+        </activity>
+        <activity android:name=".MainNew2"
+            android:label = "Edit Note">
+        </activity>
+    </application>
+
+</manifest>

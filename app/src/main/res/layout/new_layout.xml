@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id = "@+id/toolbar2"
+        layout="@layout/toolbar"/>
+    <View
+        android:layout_marginTop="0dp"
+        android:layout_below = "@id/toolbar2"
+        android:layout_width="match_parent"
+        android:id = "@+id/view1"
+        android:layout_height="4px"
+        android:background="#b71c1c"/>
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_below = "@id/toolbar2"
+        android:layout_width="match_parent"
+        android:id = "@+id/view2"
+        android:layout_height="5px"
+        android:background="@drawable/bgtoolbar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Title           :"
+        android:layout_below = "@id/view2"
+        android:id = "@+id/titletxt"/>
+    <EditText
+        android:layout_below = "@id/titletxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/formtitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/textnew"
+        android:layout_below="@id/formtitle"
+        android:text = "New Note : "/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint = "Conding In Here ...."
+        android:id = "@+id/formcode"
+        android:gravity="top"
+        android:layout_below="@id/textnew"/>
+    <ImageButton
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="39dp"
+        android:layout_marginRight="1dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/oval2"/>
+    <ImageButton
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:id = "@+id/fbsave"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src = "@drawable/save"
+        android:layout_marginBottom="40dp"
+        android:elevation="4dp"
+        android:background = "@drawable/oval"/>
+
+</RelativeLayout>
